@@ -1,4 +1,4 @@
-"""
+/*
 Code provided by Danny Tarlow, Kevin Swersky, Laurent Charlin, Ilya Sutskever and Rich Zemel
 
 Permission is granted for anyone to copy, use, modify, or distribute this
@@ -14,7 +14,7 @@ application.  All use of these programs is entirely at the user's own risk.
 
 This code implements the methods described in the paper:
 Stochastic k-neighborhood selection for supervised and unsupervised learning. ICML 2013.
-"""
+*/
 
 #include <iostream>
  #include <stdio.h>
