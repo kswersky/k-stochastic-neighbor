@@ -1,0 +1,15 @@
+SETUP:
+- Download the usps dataset from http://www.cs.nyu.edu/~roweis/data/usps_all.mat
+- Build the inference code in the chain folder using the provided Makefile
+- Results (in pickled format) and figures (in png, pdf and eps formats) will be
+  written at fixed intervals in the ./res/ and ./figs/ folders respectively.
+  - Folders should be created before runnning learn_ktsne.py
+
+RUNNING:
+- To run ktsne :
+python learn_ktsne.py k num_iters perplexity L2 learning_rate number_of_examples_to_use seed
+
+For example: 
+python learn_ktsne.py usps 1 250 2 0.5 0.1 1000 1
+
+

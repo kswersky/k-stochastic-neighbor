@@ -1,0 +1,4 @@
+To run the code:
+1) Download the USPS dataset from http://www.cs.nyu.edu/~roweis/data/usps_all.mat
+2) Build the inference code using the provided Makefile
+3) From the shell enter: python knca.py
