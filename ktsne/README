@@ -7,7 +7,7 @@ SETUP:
 
 RUNNING:
 - To run ktsne :
-python learn_ktsne.py k num_iters perplexity L2 learning_rate number_of_examples_to_use seed
+python learn_ktsne.py dataset k num_iters perplexity L2 learning_rate number_of_examples_to_use seed
 
 For example: 
 python learn_ktsne.py usps 1 250 2 0.5 0.1 1000 1
