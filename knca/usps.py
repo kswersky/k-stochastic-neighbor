@@ -18,7 +18,7 @@ Stochastic k-neighborhood selection for supervised and unsupervised learning. IC
 
 from scipy.io import loadmat
 import numpy as np
-import Image
+from PIL import Image
 
 raw = loadmat('../data/usps_all.mat')['data']
 classes = [None] * 10
@@ -98,5 +98,5 @@ def usps_resizer(X, newdim):
         x = X[i,:].reshape((16,16))
         img = Image.fromarray(x)
         img = img.transpose(4).transpose(0).resize((newdim,newdim), Image.ANTIALIAS)
-        Xnew[i,:] = np.fromstring(img.tostring(),np.uint8)
+        Xnew[i,:] = np.fromstring(img.tobytes(),np.uint8)
     return Xnew
